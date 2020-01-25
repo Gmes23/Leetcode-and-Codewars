@@ -43,9 +43,15 @@ Explanation:
  * @return {number}
  */
 
-var points = [[1,1],[2,2],[3,3]]
 var maxPoints = function(points) {
-    return console.log(points)
+    return points.reduce(function(accumulator, currentValue, currentIndex, array) {
+        // return console.log(accumulator)
+        for (i = 0; i < array.length; i++) {
+            console.log(array[i].reduce(function(a,b) {
+                console.log(a/b)
+            }))
+          }
+    })
 };
 
-maxPoints();
+maxPoints([[1,1],[2,2],[3,3]]);

@@ -44,14 +44,26 @@ Explanation:
  */
 
 var maxPoints = function(points) {
+    // for( var j = 0; j < points.length; j++) {
+    //     console.log(points[j])
+    // }
     return points.reduce(function(accumulator, currentValue, currentIndex, array) {
-        // return console.log(accumulator)
-        for (i = 0; i < array.length; i++) {
-            console.log(array[i].reduce(function(a,b) {
-                console.log(a/b)
-            }))
-          }
-    })
+        var map = {POSITIVE_INFINITY: 0}
+        var samePoint = 1;
+
+        for( var j = 0; j < points.length; j++) {
+            console.log(points[j])
+        }
+    },0)
 };
 
+var maxPoints = function(points) {
+    var calculateSlope = function(x1, y1, x2, y2) {
+        var slope =  (y1 - y2) / (x2 - x1)
+    }
+
+    return slope;
+}
+
 maxPoints([[1,1],[2,2],[3,3]]);
+// maxPoints([1,2,3]);

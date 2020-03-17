@@ -10,6 +10,8 @@ ALGORITHMSSTRINGSARITHMETICMATHEMATICSNUMBERSBIG INTEGERSINTEGERSUTILITIES
 */
 
 /*
+
+NOTE : unfinished
 xkr.us/articles/javascript/unary-add
 */
 function sumStrings(a,b) { 

@@ -13,15 +13,25 @@ function bubbleSort(unsortedArray) {
     // We use unsortedArray - 1 because in our if conditional, if we didnt,
     // unsortedArray.length will give us an error on when comparing the very last element in the array
     let end = unsortedArray.length - 1;
+    console.log(end, 'end start')
+
     for (let i=0; i < end; i++) {
         if (unsortedArray[i] > unsortedArray[i+1]) {
             swapped = true;
             let temp = unsortedArray[i];
+    console.log(temp, 'temp')
+
             unsortedArray[i] = unsortedArray[i + 1];
+    console.log(unsortedArray[i], 'unsortedArray[i]')
+
             unsortedArray[i + 1] = temp;
+    console.log(unsortedArray[i+1], 'unsortedArray[i+1]')
+
         }
     }
     end --;
+    console.log(end, 'end end')
+
 };
 
 do {

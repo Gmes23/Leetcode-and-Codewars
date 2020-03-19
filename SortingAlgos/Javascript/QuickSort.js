@@ -6,7 +6,7 @@
   swapping items in place and partitioning a section of the array.
 
   Time complexity of Quick Sort is O(nLogn). 
-  - It can have a O(n2) comparisons, although this behavior is rare.
+  - with a worst case of O(n2).
   The space complexity is O(nLogn). (Doesn’t require any extra storage)
 */
 

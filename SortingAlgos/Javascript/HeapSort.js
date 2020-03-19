@@ -23,9 +23,9 @@
 class MinHeap {
     // The constructor method is a special method
     // for creating and initializing an object created within a class.
-    constructor() {
+    constructor(value) {
         // We start with a dummy node at index 0
-        this.heap = [null]
+        this.heap = [null, ...value]
     }
 
     getmin() {
@@ -104,8 +104,9 @@ class MinHeap {
     }
     
 }
-let minSort = new MinHeap([1,2,43,2])
-console.log(minSort.getmin())
+let minSort = new MinHeap( )
+var sorted1 = minSort.insert([1,2,43,2])
+console.log(sorted1)
 
 // create max heap
 function maxHeap(input, i) {
@@ -136,7 +137,7 @@ function swap(input, indexA, indexB) {
 
 function heapSort(input) {   
     arrLength = input.length
-
+    // -= is the same as x = x - y 
     for (let i = Math.floor(arrLength / 2); i >= 0; i -= 1)      {
         maxHeap(input, i)
       }

@@ -5,6 +5,8 @@ or more sub-problems of the same or related type, until these become simple enou
 directly. The solutions to the sub-problems are then combined to give a solution to the original 
 problem. So Merge Sort first divides the array into equal halves and then combines them in a sorted 
 manner.
+
+time complexity: O(nlogn)
 */
 
 function mergeSort(arr) {

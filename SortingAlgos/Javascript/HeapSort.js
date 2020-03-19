@@ -13,6 +13,10 @@
         left child: i * 2
         right child: i * 2 +1
         parent: floor(i/2)
+
+    In a max heap, all parent elements must be larger than both of their child elements. 
+    As we’ll see later, this is really useful for us because we know for sure that the 
+    largest number is at the top.
 */
 
 
@@ -100,5 +104,56 @@ class MinHeap {
     }
     
 }
-let heapSort = new MinHeap([1,32,2])
-console.log(heapSort)
+let minSort = new MinHeap([1,2,43,2])
+console.log(minSort.getmin())
+
+// create max heap
+function maxHeap(input, i) {
+    const left = 2 * i + 1
+    const right = 2 * i + 2
+    let max = i
+
+    if (left < arrLength && input[left] > input[max]) {
+        max = left
+    }
+
+    if (right < arrLength && input[right] > input[max])     {
+        max = right
+    }
+
+    if (max != i) {
+        swap(input, i, max)
+        maxHeap(input, max)
+    }
+}
+
+function swap(input, indexA, indexB) {
+    const temp = input[indexA]
+
+    input[indexA] = input[indexB]
+    input[indexB] = temp
+}
+
+function heapSort(input) {   
+    arrLength = input.length
+
+    for (let i = Math.floor(arrLength / 2); i >= 0; i -= 1)      {
+        maxHeap(input, i)
+      }
+
+    for (i = input.length - 1; i > 0; i--) {
+        swap(input, 0, i)
+        arrLength--
+
+        maxHeap(input, 0)
+    }
+    return
+}
+
+let arrLength
+
+const list = [4, 2, 3, 1, 5]
+
+const sorted = heapSort(list)
+
+console.log(list)

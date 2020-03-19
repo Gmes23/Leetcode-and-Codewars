@@ -39,16 +39,16 @@ class MinHeap {
         this.heap.push(node);
 
         // Find the correct position of the new node
-        if(this.heap.length > 1) {
-            let current = this.heap.length -1;
-            
+        if (this.heap.length > 1) {
+            let current = this.heap.length - 1;
+
             // Traverse up the parent node until the current node is greater then its parent
             // Since we are using an array but heaps are use with trees we use i/2 equation to find 
             // location of the parent, we also use Math.floor to round to nearest lowest integer
-            while(current > 1 && this.heap[Math.floor(current/2)] > this.heap[current]) {
+            while (current > 1 && this.heap[Math.floor(current / 2)] > this.heap[current]) {
                 // Destructuring 
-                [this.heap[Math.floor(current/2)], this.heap[current]] = [this.heap[current], this.heap[Math.floor(current/2)]]
-                current = Math.floor(current/2)
+                [this.heap[Math.floor(current / 2)], this.heap[current]] = [this.heap[current], this.heap[Math.floor(current / 2)]]
+                current = Math.floor(current / 2)
             }
         }
     }
@@ -62,9 +62,9 @@ class MinHeap {
 
         if (this.heap.length > 2) {
             this.heap[1] = this.heap[this.heap.length - 1]
-            this.heap.splice(this.heap.length -1)
+            this.heap.splice(this.heap.length - 1)
 
-            if(this.heap.length === 3) {
+            if (this.heap.length === 3) {
                 if (this.heap[1] > this.heap[2]) {
                     [this.heap[1], this.heap[2]] = [this.heap[2], this.heap[1]]
                 }
@@ -76,9 +76,9 @@ class MinHeap {
             let rightChildIndex = current * 2 + 1
 
             while (this.heap[leftChildIndex] &&
-                    this.heap[rightChildIndex] &&
-                    (this.heap[current] < this.heap[leftChildIndex] ||
-                        this.heap[current] < this.heap[rightChildIndex])) {
+                this.heap[rightChildIndex] &&
+                (this.heap[current] < this.heap[leftChildIndex] ||
+                    this.heap[current] < this.heap[rightChildIndex])) {
                 if (this.heap[leftChildIndex] < this.heap[rightChildIndex]) {
                     [this.heap[current], this.heap[leftChildIndex]] = [this.heap[leftChildIndex], this.heap[current]]
                     current = leftChildIndex
@@ -93,19 +93,19 @@ class MinHeap {
         }
         // If there are only two elements in the array, we directly splice out the first element
 
-         else if (this.heap.length === 2) {
+        else if (this.heap.length === 2) {
             this.heap.splice(1, 1)
         } else {
             return null
         }
 
         return smallest
-    
+
     }
-    
+
 }
-let minSort = new MinHeap( )
-var sorted1 = minSort.insert([1,2,43,2])
+let minSort = new MinHeap()
+var sorted1 = minSort.insert([1, 2, 43, 2])
 console.log(sorted1)
 
 // create max heap
@@ -118,7 +118,7 @@ function maxHeap(input, i) {
         max = left
     }
 
-    if (right < arrLength && input[right] > input[max])     {
+    if (right < arrLength && input[right] > input[max]) {
         max = right
     }
 
@@ -135,12 +135,12 @@ function swap(input, indexA, indexB) {
     input[indexB] = temp
 }
 
-function heapSort(input) {   
+function heapSort(input) {
     arrLength = input.length
     // -= is the same as x = x - y 
-    for (let i = Math.floor(arrLength / 2); i >= 0; i -= 1)      {
+    for (let i = Math.floor(arrLength / 2); i >= 0; i -= 1) {
         maxHeap(input, i)
-      }
+    }
 
     for (i = input.length - 1; i > 0; i--) {
         swap(input, 0, i)

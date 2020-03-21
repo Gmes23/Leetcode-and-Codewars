@@ -104,6 +104,7 @@ class MinHeap {
     }
 
 }
+//TODO REDO
 let minSort = new MinHeap()
 var sorted1 = minSort.insert([1, 2, 43, 2])
 console.log(sorted1)

@@ -10,10 +10,9 @@
   The space complexity is O(nLogn). (Doesn’t require any extra storage)
 */
 
-
 function quickSort(arr) {
     // Checks that we have an array greater than 2 
-    if (arr.length === 1) {
+    if (arr.length === 1) { 
         return arr;
     }
 
@@ -47,4 +46,4 @@ function quickSort(arr) {
     }
 }
 
-console.log(quickSort([1, 2, 4, 2, 7, 43, 21]));
+console.log(quickSort([344,200,400,600,100]));

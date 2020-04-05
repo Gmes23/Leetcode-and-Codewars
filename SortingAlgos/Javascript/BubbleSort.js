@@ -19,7 +19,7 @@ function bubbleSort(unsortedArray) {
         if (unsortedArray[i] > unsortedArray[i+1]) {
             swapped = true;
             let temp = unsortedArray[i];
-    console.log(temp, 'temp')
+    console.log(temp, 'temp.')
 
             unsortedArray[i] = unsortedArray[i + 1];
     console.log(unsortedArray[i], 'unsortedArray[i]')

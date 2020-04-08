@@ -26,6 +26,6 @@ var findSpecialInteger = function(arr) {
     }
     
     return maxChar;
-};
+}
 
 console.log(findSpecialInteger(arr))

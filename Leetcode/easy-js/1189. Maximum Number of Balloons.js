@@ -32,7 +32,6 @@ Constraints:
 text consists of lower case English letters only.
 */
 
-
 /**
  * @param {string} text
  * @return {number}

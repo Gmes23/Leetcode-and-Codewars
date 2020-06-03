@@ -69,16 +69,5 @@ var maxPoints = function(points) {
     },0)
 };
 
-// var maxPoints = function(points) {
-//     var calculateSlope = function(x1, y1, x2, y2) {
-//         var slope =  (y1 - y2) / (x2 - x1)
-//     }
-
-//     return slope;
-// }
-
-// STILL NEED TO REVIEW 
-// one of the responses returns NaN
-
 maxPoints([[0,0], [0,0]]);
 // maxPoints([1,2,3]);

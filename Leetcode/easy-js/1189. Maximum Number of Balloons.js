@@ -18,7 +18,6 @@ Example 3:
 
 Input: text = "leetcode"
 Output: 0
- 
 
 Constraints:
 

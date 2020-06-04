@@ -18,7 +18,6 @@ Example 3:
 
 Input: text = "leetcode"
 Output: 0
-
 Constraints:
 
 1 <= text.length <= 10^4

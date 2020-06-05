@@ -23,7 +23,6 @@ Constraints:
 1 <= text.length <= 10^4
 text consists of lower case English letters only.
 */
-
 /**
  * @param {string} text
  * @return {number}

@@ -19,7 +19,6 @@ Step 4) 3 is odd; subtract 1 and obtain 2.
 Step 5) 2 is even; divide by 2 and obtain 1. 
 Step 6) 1 is odd; subtract 1 and obtain 0.
 """
-
 class Solution:
     def numberOfSteps (self, num: int) -> int:
         # we set a variable called steps to count how many times an operation happens

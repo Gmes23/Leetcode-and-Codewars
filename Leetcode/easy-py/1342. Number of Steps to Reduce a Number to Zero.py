@@ -44,7 +44,6 @@ class Solution:
 # Class().function()
 Solution().numberOfSteps(20)
 
-
 """ 
 This question is from leetcode, submitting your questions will yield statistic of 
 your equation and compare it to others, here is this algo statistic

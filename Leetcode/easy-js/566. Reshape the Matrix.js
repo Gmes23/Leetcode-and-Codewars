@@ -11,6 +11,7 @@ var matrixReshape = function(nums, r, c) {
     
     let flatNums = null;
     
+    // TODO rewrite function
     // return original if new dimension doesn't match 
     if (r * c !== numsRow * numsCol) return nums;
     

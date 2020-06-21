@@ -1,4 +1,4 @@
-//define the object
+// Define the object
 
 /*
 function HashTable(obj)

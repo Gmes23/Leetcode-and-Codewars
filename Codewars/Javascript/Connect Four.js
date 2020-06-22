@@ -26,7 +26,6 @@ The first player who connects four items of the same color is the winner.
 You should return "Yellow", "Red" or "Draw" accordingly.
 
 FUNDAMENTALS
-
 */
 
 function whoIsWinner(piecesPositionList){

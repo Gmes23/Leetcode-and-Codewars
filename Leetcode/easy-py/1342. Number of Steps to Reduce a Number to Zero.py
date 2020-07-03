@@ -51,5 +51,4 @@ your equation and compare it to others, here is this algo statistic
 Runtime: 32 ms, faster than 20.15% of Python3 online submissions for Number of Steps to Reduce a Number to Zero.
 Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Number of Steps to Reduce a Number to Zero.
 
-
 """

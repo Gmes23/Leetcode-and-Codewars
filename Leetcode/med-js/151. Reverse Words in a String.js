@@ -6,7 +6,6 @@ var reverseWords = function(s) {
     return s.split(" ").reverse().join(' ').replace(/\s+/g, " ").trim()
 };
 console.log(reverseWords(" the sky   is blue"))
-
 /*
 This question is from leetcode, submitting your questions will yield statistic of 
 your equation and compare it to others, here is this algo statistic
